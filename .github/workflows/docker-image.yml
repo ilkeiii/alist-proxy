@@ -31,5 +31,4 @@ jobs:
         with:
           tags: |
               ilkeiii/alist-proxy:latest
-              ilkeiii/alist-proxy:$(date +%s)
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/386,linux/arm/v6,linux/s390x
