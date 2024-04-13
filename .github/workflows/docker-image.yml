@@ -29,6 +29,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
+          context: .
+          push: true # push to docker hub
           tags: |
               ilkeiii/alist-proxy:latest
-          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/386,linux/arm/v6,linux/s390x
+          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/386 #,linux/arm/v6,linux/s390x
